@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.padd {
+		padding-left: 280px;
+		padding-right: 280px;
+	}
+	
+	.fixed-bg {
+		background-image: url('../Roboboat!/lakebackgroundunsplash.jpg');
+		min-height: 900px;
+		background-attachment: fixed;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.color1 {
+		background-color: #003049;
+		color: #B7D2DC;
+		display: flex;
+	}
+	
+	.color2 {
+		background-color: #669bbc;
+		display: flex;
+		color: #003049;
+	}
+	
+	.color3 {
+		background-color: #a14256;
+		display: flex;
+		color: #780000;
+	}
+	
+	.color4 {
+		background-color: #780000;
+		display: flex;
+		color: #a14256;
+	}
+	
+	.color5 {
+		background-color: #232425;
+		color: #a14256;
+		display: flow-root;
+	}
+	
+	.Headertab {
+		color: #1A1A1A;
+		background-color: #1A1A1A;
+		letter-spacing: normal;
+		word-spacing: normal;
+		height: auto;
+		width: auto;
+		display: flex;
+	}
+	
+	.button {
+		background-color: #1A1A1A;
+		border: none;
+		color: white;
+		padding: 16px 5px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16.4px;
+		width: 170px;
+		float: center;
+		transition-duration: 0.5s;
+		border-radius: 0px;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	}
+	
+	.button:hover {
+		background-color: #5C5A5A;
+		border: none;
+		color: white;
+		padding: 16px 5px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16.4px;
+		width: 175px;
+		float: left;
+		transition-duration: 0.5s;
+		border-radius: 0px;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+		
+		
+	}
+	
+	.centered {
+		color: #0F0F1A;
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.container {
+		background-image: url('../Roboboat!/lakebackgroundunsplash.jpg');
+		background-attachment: fixed;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		color: white;
+	}
+	/* The side navigation menu */
+	
+	.sidenav {
+		height: 100%;
+		/* 100% Full-height */
+		width: 0;
+		/* 0 width - change this with JavaScript */
+		position: fixed;
+		/* Stay in place */
+		z-index: 1;
+		/* Stay on top */
+		top: 0;
+		left: 0;
+		background-color: #111;
+		/* Black*/
+		overflow-x: hidden;
+		/* Disable horizontal scroll */
+		padding-top: 60px;
+		/* Place content 60px from the top */
+		transition: 0.5s;
+		/* 0.5 second transition effect to slide in the sidenav */
+	}
+	/* The navigation menu links */
+	
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+	/* When you mouse over the navigation links, change their color */
+	
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+	/* Position and style the close button (top right corner) */
+	
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+	
+	/* #left {
+		float: left;
+		text-align: left;
+	}
+
+	
+	#main {
+		transition: margin-left .5s;
+		padding: 20px;
+	}
+	*/
+	.coolborder {
+		background-color: rgba(0, 0, 0, .5);
+		display: flex;
+	}
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+	/* all header menu \/ */
+	
+	.details {
+		font-size: 24px;
+		color: #050404;
+		letter-spacing: 1px;
+		text-align: left;
+		word-spacing: 1px;
+		padding-top: 50px;
+	}
+		.detailsheader{
+			font-size: 24px;
+		color: #050404;
+		letter-spacing: 1px;
+		text-align: center;
+		word-spacing: 1px;
+		padding-top: 50px;
+		
+			
+		}
+			.detailsinv {
+		font-size: 24px;
+		color: #050404;
+		letter-spacing: 1px;
+		text-align: right;
+		word-spacing: 1px;
+		padding-top: 50px;
+		
+	}
+	
+	.detailsseperate {
+		padding-top: 500px;
+	}
+		
+		.custom-shape-divider-bottom-1664141754 {
+    position: absolute;
+    bottom: -4.9%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1664141754 svg {
+    position: relative;
+    display: flex;
+    width: calc(115% + 1.3px);
+    height: 76px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1664141754 .shape-fill {
+    fill: #FFFFFF;
+}
+		.footer{
+			padding-left: 280px;
+		padding-right: 280px;
+			font-size: 24px;
+		color: #050404;
+		letter-spacing: 1px;
+		text-align: right;
+		word-spacing: 1px;
+		padding-top: 50px;
+			background-color: #222222;
+		}
+	

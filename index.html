@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+	
+	<style>
+	.padd {
+		padding-left: 280px;
+		padding-right: 280px;
+	}
+	
+	.fixed-bg {
+		background-image: url('lakebackgroundunsplash.jpg');
+		min-height: 1000px;
+		background-attachment: fixed;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.color1 {
+		background-color: #003049;
+		color: #B7D2DC;
+		display: flex;
+	}
+	
+	.color2 {
+		background-color: #669bbc;
+		display: flex;
+		color: #003049;
+	}
+	
+	.color3 {
+		background-color: #a14256;
+		display: flex;
+		color: #780000;
+	}
+	
+	.color4 {
+		background-color: #780000;
+		display: flex;
+		color: #a14256;
+	}
+	
+	.color5 {
+		background-color: #232425;
+		color: #a14256;
+		display: flow-root;
+	}
+	
+	.Headertab {
+		color: #1A1A1A;
+		background-color: #1A1A1A;
+		letter-spacing: normal;
+		word-spacing: normal;
+		height: auto;
+		width: auto;
+		display: flex;
+	}
+	
+	.button {
+		background-color: #1A1A1A;
+		border: none;
+		color: white;
+		padding: 16px 5px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16.4px;
+		width: 170px;
+		float: center;
+		transition-duration: 0.5s;
+		border-radius: 0px;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	}
+	
+	.button:hover {
+		background-color: #5C5A5A;
+		border: none;
+		color: white;
+		padding: 16px 5px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16.4px;
+		width: 175px;
+		float: left;
+		transition-duration: 0.5s;
+		border-radius: 0px;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+		transition-duration: 0.5s;
+		border-radius: 1px;
+	}
+	
+	.centered {
+		color: #0F0F1A;
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.container {
+		background-image: url('lakebackgroundunsplash.jpg');
+		background-attachment: fixed;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		color: white;
+	}
+	/* The side navigation menu */
+	
+	.sidenav {
+		height: 100%;
+		/* 100% Full-height */
+		width: 0;
+		/* 0 width - change this with JavaScript */
+		position: fixed;
+		/* Stay in place */
+		z-index: 1;
+		/* Stay on top */
+		top: 0;
+		left: 0;
+		background-color: #111;
+		/* Black*/
+		overflow-x: hidden;
+		/* Disable horizontal scroll */
+		padding-top: 60px;
+		/* Place content 60px from the top */
+		transition: 0.5s;
+		/* 0.5 second transition effect to slide in the sidenav */
+	}
+	/* The navigation menu links */
+	
+	.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+	/* When you mouse over the navigation links, change their color */
+	
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+	/* Position and style the close button (top right corner) */
+	
+	.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+	
+	#left {
+		float: left;
+		text-align: left;
+	}
+	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+	
+	#main {
+		transition: margin-left .5s;
+		padding: 20px;
+	}
+	
+	.coolborder {
+		background-color: rgba(0, 0, 0, .5);
+		display: flex;
+	}
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+	/* all header menu \/ */
+	
+	.details {
+		font-size: 24px;
+		color: #050404;
+		letter-spacing: 1px;
+		text-align: left;
+		word-spacing: 1px;
+		padding-top: 50px;
+	}
+		.detailsheader{
+			font-size: 24px;
+		color: #050404;
+		letter-spacing: 1px;
+		text-align: center;
+		word-spacing: 1px;
+		padding-top: 50px;
+		
+			
+		}
+			.detailsinv {
+		font-size: 24px;
+		color: #050404;
+		letter-spacing: 1px;
+		text-align: right;
+		word-spacing: 1px;
+		padding-top: 50px;
+		
+	}
+	
+	.detailsseperate {
+		padding-top: 500px;
+	}
+		
+		.custom-shape-divider-bottom-1664141754 {
+    position: absolute;
+    bottom: -1.5%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1664141754 svg {
+    position: relative;
+    display: flex;
+    width: calc(115% + 1.3px);
+    height: 76px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1664141754 .shape-fill {
+    fill: #FFFFFF;
+}
+		.footer{
+			padding-left: 280px;
+		padding-right: 280px;
+			font-size: 24px;
+		color: #050404;
+		letter-spacing: 1px;
+		text-align: right;
+		word-spacing: 1px;
+		padding-top: 50px;
+			background-color: #222222;
+		}
+	
+	</style>
+	<header style="text-align:center" class="Headertab ">
+		<button class="button button 1" onclick="openNav()">OPEN MENU</button>
+		<div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+				<a href="../RoboboatWeb/Team.html">The Team</a> 
+			<a href="../RoboboatWeb/computersci.html">Computer Science</a> 
+			<a href="../RoboboatWeb/Engineering.html">Engineering</a> 
+			<a href="../RoboboatWeb/Support.html">Support</a> 
+			<a href="../RoboboatWeb/Sponsors.html">Sponsors</a> 
+			<a href="../RoboboatWeb/Contact.html">Contact</a> 
+		</div>
+	</header>
+	<!-- Use any element to open the sidenav -->
+	<!-- IMAGES / OPENER -->
+	<div>
+		<div class="container">
+			<div class="centered"></div>
+		</div>
+		<div class="banner">
+			<div class="wsite-section-elements">
+				<div class="centered " style="text-align:center;"><strong><font size="6">JAMES MARTIN HIGH SCHOOL<br>&nbsp;<br></font></strong></div>
+				<div class="centered" style="text-align:center;"><strong><font size="+7"><br>&nbsp;ROBOBOAT</font></strong> </div>
+				<div class="centered" style="text-align:center;"><strong><font size="6"><br><br> <br> <br> <br> &nbsp;Pushing the boundaries of high school STEM programs</font></strong></div>
+				<div class="centered" style="text-align:center;">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<aside><img src="ROBOBOAT-Back.PNG" width="700" height="704" alt="" id="left" /> </aside>
+				</div>
+				<div class="paragraph" style="text-align:center;"><font color="#2a2a2a" size="4"><em></em></font></div>
+			</div>
+		</div>
+	</div>
+	<title>index.html</title>
+</head>
+
+<body>
+	
+	<div class="fixed-bg"></div>
+<div class="custom-shape-divider-bottom-1664141754 ">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+	<section>
+		
+		<!-- ************* these images must be 452 x 356 (UPDATE IF CHANGED) .detailsseperate and .details for these  *************** -->
+		<div class = "padd detailsheader " > <h1> Annoucments </h1>
+		<br> u can put important, Relevant information in this section. For example, deadlines and due dates, immediate links or other important info. <br><br><br><br> </div>
+		<div class="padd details detail">
+			<h1> &nbsp;&nbsp;&nbsp;&nbsp;What is Roboboat? </h1> <font size="4" style="float:right;"> <img src="roboboatlogo.jpg" width="452" height="356" alt="" style="float:right;"/>Student teams design and build Autonomous Surface Vehicles (ASV) and compete in an international competition. RoboBoat competitions unite an enhanced community of innovators, with results capable of making substantive contributions to the maritime field. 
+								Teams design Autonomous Surface Vehicles (ASVs) to dominate the waters and are challenged to navigate and race through an aquatic obstacle course. The behaviors demonstrated by these boats mimic tasks that are being developed for coastal surveillance, port security and other types of oceanographic operations. Discover all the tasks required of these RoboBoat teams.
+							<br><br>
+	</font> </div>
+		<div class="padd detailsinv detailsseperate">
+			<h1 > Our Goal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1> <font size="4" style="float:left;"> <img src="Screen Shot 2022-09-25 at 12.12.27 AM.png" width="402" height="346" alt="" style="float:left;"/> Student teams design and build Autonomous Surface Vehicles (ASV) and compete in an international competition. RoboBoat competitions unite an enhanced community of innovators, with results capable of making substantive contributions to the maritime field. 
+								Teams design Autonomous Surface Vehicles (ASVs) to dominate the waters and are challenged to navigate and race through an aquatic obstacle course. The behaviors demonstrated by these boats mimic tasks that are being developed for coastal surveillance, port security and other types of oceanographic operations. Discover all the tasks required of these RoboBoat teams.
+							 <br><br>
+						</font> </div>
+		
+		<div class = "padd detailsheader detailsseperate" > <h1> Those Making it Happen: <br><br><br></h1>
+		
+			<!-- put in links ***** make a button that dims image when you hover that sends to correct place -->
+			 <div class="row">
+            <div class="col">
+                 <img src="roboboatlogo.jpg" alt="" width="242" height="190">
+                <p>Team</p>
+            </div>
+            <div class="col">
+                <img src="roboboatlogo.jpg" alt="" width="242" height="190">
+                <p>Computer Science</p>
+            </div>
+            <div class="col">
+                <img src="roboboatlogo.jpg" alt="" width="242" height="190">
+                <p>Engineering</p>
+            </div>
+            <div class="col">
+                <img src="roboboatlogo.jpg" alt="" width="242" height="190">
+                <p>Support</p>
+            </div>
+			</div> 
+		</div>
+		<!--  ************* DIFFERENCE DIV FOR SPONSORS (LIST BIG ONES ) add later its not important plus idk wht they are  -->
+		<div class="padd detailsheader">
+			<h1 > <br> Sponsors: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1> <font size="4" > <br> these images can be bigger or smaller based on amount present <br> INSERT IMAGES (FIGS FOR SHORT DESCRIPTION) OF SPONSORS IN ROW LIKE PREVIOUS DIVINSERT IMAGES (FIGS FOR SHORT DESCRIPTION) OF SPONSORS IN ROW LIKE PREVIOUS DIVINSERT IMAGES (FIGS FOR SHORT DESCRIPTION) OF SPONSORS IN ROW LIKE PREVIOUS DIVINSERT IMAGES (FIGS FOR SHORT DESCRIPTION) OF SPONSORS IN ROW LIKE PREVIOUS DIVINSERT IMAGES (FIGS FOR SHORT DESCRIPTION) OF SPONSORS IN ROW LIKE PREVIOUS DIVINSERT IMAGES (FIGS FOR SHORT DESCRIPTION) OF SPONSORS IN ROW LIKE PREVIOUS DIVINSERT IMAGES (FIGS FOR SHORT DESCRIPTION) OF SPONSORS IN ROW LIKE PREVIOUS DIVINSERT IMAGES (FIGS FOR SHORT DESCRIPTION) OF SPONSORS IN ROW LIKE PREVIOUS DIV  
+							 <br><br>
+						</font> 
+				</div>
+    </section>
+	
+<footer class = "footer"><br> 
+	<font> put in little icons (insta, email, remind ) </font>
+	
+	</footer>
+<!-- common (aka across all pages) footer new section  -->
+
+<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "0";
+	}
+		
+	</script>
+</body>
+
+</html>
